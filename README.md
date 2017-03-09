@@ -1,0 +1,1 @@
+# azure-functions-event-hub-trigger-docdb-in-out
