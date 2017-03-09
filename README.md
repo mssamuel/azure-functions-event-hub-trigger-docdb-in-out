@@ -1,1 +1,1 @@
-# azure-functions-event-hub-trigger-docdb-in-out
+# azure-functions-eventhub-trigger-docdb-in-out
