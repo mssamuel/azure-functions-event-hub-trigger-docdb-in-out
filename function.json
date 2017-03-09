@@ -1,0 +1,31 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "myEventHubTrigger",
+      "direction": "in",
+      "path": "functiontest",
+      "connection": "slEHConnection",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "documentDB",
+      "name": "inputDocument",
+      "databaseName": "inDatabase",
+      "collectionName": "inCollection",
+      "id": "{myEventHubTrigger}",
+      "connection": "indocumentdb_DOCUMENTDB",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDocument",
+      "databaseName": "inDatabase",
+      "collectionName": "inCollection",
+      "createIfNotExists": false,
+      "connection": "indocumentdb_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
